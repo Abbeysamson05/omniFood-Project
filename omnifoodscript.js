@@ -138,3 +138,16 @@ allSection.forEach(function (section) {
   console.log(section);
   sectionObserver.observe(section);
 });
+
+const menuicon = document.querySelector(".nav-icon-1");
+const closeicon = document.querySelector(".nav-icon-2");
+menuicon.addEventListener("click", function () {
+  console.log("Menu clicked!");
+  menuicon.style.display = "none";
+  closeicon.style.display = "block";
+});
+closeicon.addEventListener("click", function () {
+  console.log("Close clicked!");
+  menuicon.style.display = "block";
+  closeicon.style.display = "none";
+});
