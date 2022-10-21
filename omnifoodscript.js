@@ -1,5 +1,5 @@
 "use strict";
-console.log("Its raining since morning!");
+// console.log("Its raining since morning!");
 // const heroLink = document.querySelector(".hero-link");
 // const section1 = document.getElementById("how");
 // heroLink.addEventListener("click", function (e) {
@@ -45,7 +45,7 @@ navs.addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("hero-link")) {
     const id = e.target.getAttribute("href");
-    console.log(id);
+    // console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
@@ -123,7 +123,7 @@ logoObserve.observe(hero);
 // });
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("hidden");
   observer.unobserve(entry.target);
@@ -135,7 +135,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 const allSection = document.querySelectorAll(".section");
 allSection.forEach(function (section) {
   section.classList.add("hidden");
-  console.log(section);
+  // console.log(section);
   sectionObserver.observe(section);
 });
 
