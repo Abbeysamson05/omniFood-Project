@@ -143,13 +143,11 @@ const menuicon = document.querySelector(".nav-icon-1");
 const closeicon = document.querySelector(".nav-icon-2");
 const linkshidden = document.querySelector(".hero-links-hidden");
 menuicon.addEventListener("click", function () {
-  console.log("Menu clicked!");
   menuicon.style.display = "none";
   closeicon.style.display = "block";
   linkshidden.style.display = "block";
 });
 closeicon.addEventListener("click", function () {
-  console.log("Close clicked!");
   menuicon.style.display = "block";
   closeicon.style.display = "none";
   linkshidden.style.display = "none";
