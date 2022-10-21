@@ -118,17 +118,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(100%);
+    transform: translateX(0%);
     align-items: center;
     justify-content: center;
     background-color: #fff;
     height: 50%;
     width: 100%;
     transition: all 0.9s;
+    visibility: hidden;
     /* opacity: 0;
     pointer-events: none;
     visibility: hidden; */
   }
+
   .hero {
     background-color: #fdf2e9;
     position: relative;
